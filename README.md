@@ -1,10 +1,10 @@
-# NDWI GeoTIFF Export
+NDWI GeoTIFF Export
 
 This repository contains a Google Earth Engine (GEE) script that computes the **Normalized Difference Water Index (NDWI)** from Sentinel-2 Surface Reflectance imagery for a rectangular region, and exports the result as a GeoTIFF to Google Drive.
 
 ---
 
-## Key Parameters
+Key Parameters
 | Parameter | Default | Description |
 |------------|----------|--------------|
 | `YEAR` | `2019` | Year to map |
@@ -17,7 +17,7 @@ This repository contains a Google Earth Engine (GEE) script that computes the **
 
 ---
 
-## How to Run (Google Earth Engine)
+How to Run (Google Earth Engine)
 1. Go to [https://code.earthengine.google.com](https://code.earthengine.google.com)  
 2. Create a new script and paste the contents of [`ndwi_cameron_beach_export.js`](ndwi_cameron_beach_export.js)  
 3. Modify the variables marked EDIT (YEAR, AOI, etc.)  
@@ -26,25 +26,25 @@ This repository contains a Google Earth Engine (GEE) script that computes the **
 
 ---
 
-## Notes
+Notes
 - Use `EPSG:4326` if you prefer WGS84 global projection  
 - Adjust `CLOUDY_SCENE_PCT` for coverage/clarity trade-off  
 - Extend `MONTHS` for full-year NDWI or specific seasons  
 
 ---
 
-## References
+References
 - **Dataset:** Sentinel-2 Surface Reflectance (`COPERNICUS/S2_SR`) via Google Earth Engine  
 - **Algorithm:** McFeeters, S.K. (1996). *The use of the Normalized Difference Water Index (NDWI) in the delineation of open water features.*
 
 ---
 
-## Author
+Author
 **Md Ali Ahnaf Abid Mayukh**  
 Department of Civil & Environmental Engineering  
 Islamic University of Technology (IUT) - OIC, Bangladesh  
 
 ---
 
-## License
+License
 Distributed under the **MIT License**. See [LICENSE](LICENSE) for details.
